@@ -66,7 +66,7 @@ nav a:hover {
 }
 
 .btn-red:hover {
-  opacity: 0.9;
+  opacity: 0.1;
 }
 
 /* Productos destacados */
@@ -160,7 +160,7 @@ nav a:hover {
   border-radius: 10px;
 }
 
-/* Hero (nuevo banner con imagen) */
+/* Hero  */
 .hero {
   position: relative;
   width: 100%;
@@ -179,7 +179,7 @@ nav a:hover {
   height: 100%;
   object-fit: cover;
   z-index: 0;
-  filter: brightness(0.4);
+  filter: brightness(1.2);
 }
 
 .hero-content {
@@ -204,7 +204,7 @@ nav a:hover {
   background-color: #a82626;
 }
 
-/* ---------- FOOTER ---------- */
+/* FOOTER  */
 footer {
   background-color: #0f0f0f;
   color: var(--texto-blanco);
@@ -253,7 +253,7 @@ footer a:hover {
   justify-content: flex-end;
 }
 
-/* ---------- Responsive ---------- */
+/* Responsive */
 @media (max-width: 768px) {
   .detalle-card {
     flex-direction: column;
