@@ -95,6 +95,7 @@ nav a:hover {
 .producto img {
   width: 100%;
   border-radius: 5px;
+  filter: brightness(2);
 }
 
 /* Detalle */
