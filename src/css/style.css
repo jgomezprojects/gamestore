@@ -61,7 +61,7 @@ nav a:hover {
   height: 100%;
   object-fit: cover;
   z-index: 0;
-  filter: brightness(1.2);
+  filter: brightness(1.8);
 }
 
 .hero-content {
@@ -620,4 +620,5 @@ header {
 .carousel-item {
   position: relative;
 }
+
 
