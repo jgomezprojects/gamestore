@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iniciar Sesión - Gaming Store</title>
+  <link rel="stylesheet" href="src/css/style.css" />
+</head>
+
+<body class="auth-page">
+
+  <div class="auth-container">
+    <h2>INICIAR SESIÓN</h2>
+
+    <form id="loginForm" novalidate>
+      <input type="email" id="loginEmail" name="email" placeholder="Correo electrónico" required />
+      <input type="password" id="loginPassword" name="password" placeholder="Contraseña" required />
+
+      <button type="submit" class="btn-rojo">INICIAR SESIÓN</button>
+    </form>
+
+    <p>¿No tienes cuenta? <a href="signup.html">Regístrate</a></p>
+  </div>
+
+  <script src="src/js/validations.js"></script>
+  <script src="src/js/notifications.js"></script>
+  <script src="src/js/auth.js"></script>
+</body>
+</html>

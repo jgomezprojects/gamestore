@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Componentes Gamer</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="src/img/logo_gamer.svg">
+  <link rel="stylesheet" href="src/css/ver_mas.css">
+  <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+
+<header class="main-header">
+  <div class="logo">🎮 GAMING STORE</div>
+
+  <!-- Botón menú hamburguesa -->
+  <button class="menu-toggle" id="menuToggle">☰</button>
+
+  <nav id="mainNav">
+    <a href="index.html"><strong>INICIO</strong></a>
+    <a href="index.html#productos"><strong>PRODUCTOS DESTACADOS</strong></a>
+    <a href="ver_mas.html"><strong>MAS</strong></a>
+    <a href="index.html#pie"><strong>CONTACTO</strong></a>
+  </nav>
+
+  <div class="header-icons">
+    <div class="user-actions" id="authButtons">
+      <a href="login.html" id="loginBtn" class="btn-login">Iniciar sesión</a>
+      <a href="signup.html" id="registerBtn" class="btn-register">Registrarse</a>
+    </div>
+
+    <div id="userIcon" class="user-icon" style="display:none;">
+      <img src="src/img/usuario.png" alt="Usuario" id="userMenuBtn" title="Menú de usuario">
+
+      <div id="userMenu" class="user-menu">
+        <p id="userName">👤 Usuario</p>
+        <a href="#" id="configuracionBtn">⚙️ Configuración</a>
+        <a href="mis_compras.html" id="comprasBtn">🛒 Mis compras</a>
+        <a href="favoritos.html" id="favoritosBtn">⭐ Favoritos</a>
+        <hr>
+        <a href="#" id="logoutBtn">🚪 Cerrar sesión</a>
+      </div>
+    </div>
+
+    <a href="carrito.html">
+      <button class="btn-icon cart-icon">🛒</button>
+    </a>
+  </div>
+</header>
+
+
+<!-- MODALES -->
+<div id="configModal" class="modal">
+  <div class="modal-content">
+    <h2>⚙️ Configuración de cuenta</h2>
+    <div class="config-info">
+      <p><strong>Nombre:</strong> <span id="confName"></span></p>
+      <p><strong>Email:</strong> <span id="confEmail"></span></p>
+      <p><strong>Estado:</strong> <span id="confStatus">Activo ✅</span></p>
+    </div>
+    <hr>
+    <div class="config-actions">
+      <button id="changePasswordBtn">🔒 Cambiar contraseña</button>
+      <button id="closeConfigBtn">Cerrar</button>
+    </div>
+  </div>
+</div>
+
+<div id="passwordModal" class="modal">
+  <div class="modal-content password-box">
+    <h2>🔒 Cambiar contraseña</h2>
+
+    <label>Contraseña actual</label>
+    <input type="password" id="oldPass">
+
+    <label>Nueva contraseña</label>
+    <input type="password" id="newPass">
+
+    <label>Repetir nueva contraseña</label>
+    <input type="password" id="repeatNewPass">
+
+    <div class="config-actions">
+      <button id="savePassBtn">Guardar</button>
+      <button id="closePassBtn">Cancelar</button>
+    </div>
+  </div>
+</div>
+
+
+<section class="galeria-productos">
+  <a href="index.html" class="btn-volver">⬅ Volver al inicio</a>
+  <h2 class="titulo-seccion">🖥️ Componentes Gamer</h2>
+
+<div class="search-box">
+    <input id="buscador" type="text" placeholder="Buscar producto...">
+    <i class='bx bx-search'></i>
+</div>
+<p id="sinResultados" style="display:none; text-align:center; margin-top:15px; color:#e63946; font-size:1rem;">
+    No se encontró el producto, pero estará disponible pronto 🔧
+</p>
+
+
+  <div class="productos-grid">
+
+<!-- 1 -->
+<div class="producto">
+  <a href="detalle.html?id=cpu1">
+    <img src="https://tse2.mm.bing.net/th/id/OIP.ievsSF6kj-aDkxG7YrXbSAHaIN?rs=1&pid=ImgDetMain&o=7&rm=3">
+  </a>
+  <h3>CPU Gamer RGB Ryzen 7</h3>
+  <p class="precio">$2.800.000</p>
+  <p class="stock">Stock: <span>10</span></p>
+  <button class="btn-carrito">Agregar al carrito</button>
+</div>
+
+<!-- 2 -->
+<div class="producto">
+  
+  <a href="detalle.html?id=gpu4070">
+    <img src="https://tse4.mm.bing.net/th/id/OIP.7_4U5njeNJaRUQv7j70qswHaFc?rs=1&pid=ImgDetMain&o=7&rm=3">
+  </a>
+  <h3>Tarjeta Gráfica RTX 4070</h3>
+  <p class="precio">$3.200.000</p>
+  <p class="stock">Stock: <span>10</span></p>
+  <button class="btn-carrito">Agregar al carrito</button>
+</div>
+
+<!-- 3 -->
+<div class="producto">
+  
+  <a href="detalle.html?id=asusTUF">
+    <img src="https://images.tcdn.com.br/img/img_prod/374123/15558_2_20161017161515.jpg">
+  </a>
+  <h3>Placa Madre ASUS TUF B550</h3>
+  <p class="precio">$950.000</p>
+  <p class="stock">Stock: <span>10</span></p>
+  <button class="btn-carrito">Agregar al carrito</button>
+</div>
+
+<!-- 4 -->
+<div class="producto">
+
+  <a href="detalle.html?id=ram16">
+    <img src="https://tse4.mm.bing.net/th/id/OIP.ROK_eorYE7ayi_CdTDaqiQHaEn?rs=1&pid=ImgDetMain&o=7&rm=3">
+  </a>
+  <h3>Memoria RAM Corsair 16GB DDR4</h3>
+  <p class="precio">$420.000</p>
+  <p class="stock">Stock: <span>10</span></p>
+  <button class="btn-carrito">Agregar al carrito</button>
+</div>
+
+<!-- 5 -->
+<div class="producto">
+  
+  <a href="detalle.html?id=ssd1tb">
+    <img src="https://tse2.mm.bing.net/th/id/OIP.vFgIjT8kaR7QJiJJPmTPFwHaHa?rs=1&pid=ImgDetMain&o=7&rm=3">
+  </a>
+  <h3>SSD NVMe 1TB Kingston Fury</h3>
+  <p class="precio">$380.000</p>
+  <p class="stock">Stock: <span>10</span></p>
+  <button class="btn-carrito">Agregar al carrito</button>
+</div>
+
+<!-- 6 -->
+<div class="producto">
+  
+  <a href="detalle.html?id=gabineteRGB">
+    <img src="https://cdn.dooca.store/205/products/gabinete-gamer-lian-li-pc-o11d-special-edition-galax-hof-full-tower-lateral-em-vidro-branco-prata-pc-o11-dynamic-white-hof-1593030194-gg_1080x1080+fill_ffffff+crop_center.jpg?v=1593188570&webp=0">
+  </a>
+  <h3>Gabinete Gamer RGB Tempered Glass</h3>
+  <p class="precio">$460.000</p>
+  <p class="stock">Stock: <span>10</span></p>
+  <button class="btn-carrito">Agregar al carrito</button>
+</div>
+
+<!-- 7 -->
+<div class="producto">
+  
+  <a href="detalle.html?id=fuente750">
+    <img src="https://maxxicomp.com/4514-large_default/fuente-de-poder-gamer-gamemax-vp-700-rgb-modular-80p-bronze.jpg">
+  </a>
+  <h3>Fuente de Poder 750W 80+ Bronze</h3>
+  <p class="precio">$350.000</p>
+  <p class="stock">Stock: <span>10</span></p>
+  <button class="btn-carrito">Agregar al carrito</button>
+</div>
+
+<!-- 8 -->
+<div class="producto">
+  
+  <a href="detalle.html?id=monitorCurvo">
+    <img src="https://tse4.mm.bing.net/th/id/OIP.0s1cI1QbBHRG6TcTVNkqjgHaHa?w=600&h=600&rs=1&pid=ImgDetMain&o=7&rm=3">
+  </a>
+  <h3>Monitor Curvo 27" 165Hz</h3>
+  <p class="precio">$1.400.000</p>
+  <p class="stock">Stock: <span>10</span></p>
+  <button class="btn-carrito">Agregar al carrito</button>
+</div>
+
+<!-- 9 -->
+<div class="producto">
+  
+  <a href="detalle.html?id=tecladoRD">
+    <img src="https://th.bing.com/th/id/R.6cf977475a8ff8082de6672db482e9d5?rik=Lul%2fBUT%2fPRuFOA&pid=ImgRaw&r=0">
+  </a>
+  <h3>Teclado Mecánico RGB Redragon</h3>
+  <p class="precio">$270.000</p>
+  <p class="stock">Stock: <span>10</span></p>
+  <button class="btn-carrito">Agregar al carrito</button>
+</div>
+
+<!-- 10 -->
+<div class="producto">
+  
+  <a href="detalle.html?id=mouseG502">
+    <img src="https://tse1.mm.bing.net/th/id/OIP.Eh8WOBuqDVozVnwrDGn5JQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3">
+  </a>
+  <h3>Mouse Gamer Logitech G502 HERO</h3>
+  <p class="precio">$230.000</p>
+  <p class="stock">Stock: <span>10</span></p>
+  <button class="btn-carrito">Agregar al carrito</button>
+</div>
+
+<!-- 11 -->
+<div class="producto">
+  
+  <a href="detalle.html?id=hyperx">
+    <img src="https://tse2.mm.bing.net/th/id/OIP.ZoararaOiJuOLAK7w_FUngHaHa?rs=1&pid=ImgDetMain&o=7&rm=3">
+  </a>
+  <h3>Audífonos Gamer HyperX Cloud II</h3>
+  <p class="precio">$420.000</p>
+  <p class="stock">Stock: <span>10</span></p>
+  <button class="btn-carrito">Agregar al carrito</button>
+</div>
+
+<!-- 12 -->
+<div class="producto">
+  <a href="detalle.html?id=refrigeracion">
+    <img src="https://www.winp.es/wp-content/uploads/2023/03/Mars-Gaming-ML360W-mejores-refrigeraciones-liquidas-1030x579.png">
+  </a>
+  <h3>Refrigeración Líquida ML360</h3>
+  <p class="precio">$850.000</p>
+  <p class="stock">Stock: <span>10</span></p>
+  <button class="btn-carrito">Agregar al carrito</button>
+</div>
+
+<script src="src/js/script.js"></script>
+<script src="src/js/favorito.js"></script>
+<script src="src/js/ver_mas.js"></script>
+<script src="src/js/auth.js"></script>
+</body>
+</html>
